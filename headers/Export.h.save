@@ -1,0 +1,8 @@
+#ifndef EXPORT_H_INCLUDED
+#define EXPORT_H_INCLUDED       `
+#include"headers.h"
+
+bool ExportScene();
+
+
+#endif // EXPORT_H_INCLUDED

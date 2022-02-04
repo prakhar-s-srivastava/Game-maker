@@ -1,0 +1,37 @@
+{
+  "materialList-size" : 3,
+  "objectList-size" : 4,
+  "objects" : [{
+      "material" : "material",
+      "name" : "a",
+      "position" : [0.000000, 0.000000, 5.000000],
+      "rotation" : [0.000000, 190.000000, 0.000000],
+      "scale" : [1.000000, 1.000000, 1.000000],
+      "source" : "objects0.obj",
+      "type" : 0
+    }, {
+      "material" : "",
+      "name" : "directionalLight:Light1",
+      "position" : [0.600000, 0.000000, 0.000000],
+      "rotation" : [0.000000, 0.000000, 0.000000],
+      "scale" : [1.000000, 1.000000, 1.000000],
+      "source" : "objects1.obj",
+      "type" : 2
+    }, {
+      "material" : "material",
+      "name" : "AssetFolder/New folder (3)/untitled.obj",
+      "position" : [0.300000, 0.000000, 6.000000],
+      "rotation" : [120.000000, 20.000000, 0.000000],
+      "scale" : [1.000000, 1.000000, 1.000000],
+      "source" : "objects2.obj",
+      "type" : 0
+    }, {
+      "material" : "",
+      "name" : "AmbientLight:Light",
+      "position" : [0.600000, 0.000000, 0.000000],
+      "rotation" : [0.000000, 0.000000, 0.000000],
+      "scale" : [1.000000, 1.000000, 1.000000],
+      "source" : "objects3.obj",
+      "type" : 1
+    }]
+}

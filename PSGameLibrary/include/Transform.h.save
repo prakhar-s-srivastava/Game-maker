@@ -1,0 +1,38 @@
+#ifndef TRANSFORM_H
+#define TRANSFORM_H
+#include"common.h"
+
+class Transform
+{
+    public:
+        Transform();
+        virtual ~Transform();
+
+        glm::vec3 getPosition(){return Position;}
+        glm::vec3  getRotation(){return Rotation;}
+        glm::vec3  getScale(){return Scale;}
+        glm::vec3 getForward(){return Forward;}
+        glm::vec3 getUp(){return Up;}
+
+        void setPosition(glm::vec3 pos);
+        void setRotation(glm::vec3 rot);
+        void setScale(glm::vec3 scal);
+        void setForward(glm::vec3 forw);
+        void setUp(glm:: vec3 up);
+        void setPosition(float x,float y, float z);
+        void setRotation(float x,float y, float z);
+        void setScale(float x,float y, float z);
+        void GenerateModelTransformMat();
+        glm::mat4 get ModelTransformMat
+        glm::mat4 TranslateMat;
+        glm::mat4 QuaternionMat;
+        glm::mat4 ScaleMat;
+
+    protected:
+
+    private:
+        glm::vec3 Position,Rotation,Scale,Forward,Up;
+        glm::mat4 ModelTransformMat;
+};
+
+#endif // TRANSFORM_H

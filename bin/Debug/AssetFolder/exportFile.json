@@ -1,0 +1,30 @@
+{
+  "materialList-size" : 1,
+  "materials" : [{
+      "color" : [1.000000, 1.000000, 1.000000],
+      "fragment-shader" : "Export/Resources/",
+      "name" : "Export: Default",
+      "texture" : "Export: ",
+      "vertex-shader" : "Export/Resources/"
+    }],
+  "objectList-size" : 1,
+  "objects" : [{
+      "collider" : {
+        "max" : [1.000000, 1.000000, 1.000000],
+        "min" : [-1.000000, -1.000000, -1.000000],
+        "type" : "BOXAABB"
+      },
+      "material" : "Export: Default",
+      "name" : "Export: a",
+      "position" : [0.000000, 0.000000, 5.000000],
+      "rotation" : [0.000000, 0.000000, 0.000000],
+      "scale" : [1.000000, 1.000000, 1.000000],
+      "source" : "untitled.obj",
+      "type" : 0
+    }],
+  "textureList-size" : 1,
+  "textures" : [{
+      "name" : "Export: textureDefault",
+      "source" : ""
+    }]
+}

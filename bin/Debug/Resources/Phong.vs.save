@@ -1,0 +1,8 @@
+#version 330
+
+in vec3  position;\n"
+in vec3  normal;\n"
+in vec2 UVCoord; \n"
+"uniform mat4 ViewProjectionMat;\n"
+uniform mat4 ModelTransformMat; \n"
+

@@ -1,0 +1,15 @@
+#include <iostream>
+#include<GLFW/glfw3.h>
+
+#define WIDTH 640
+#define HEIGTH 480
+
+using namespace std;
+
+int main( int argc , char** argv)
+{
+
+     glfwInit();
+     GLFWwindow *window = glfwCreateWindow(WIDTH, HEIGTH, "Hello World", NULL, NULL);
+
+}

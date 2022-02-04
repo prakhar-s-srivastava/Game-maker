@@ -1,0 +1,20 @@
+#include"PSGameLibrary.h"
+
+OpenGL3::Lighting::Lighting()
+{
+    //ctor
+}
+
+OpenGL3::Lighting::~Lighting()
+{
+    //dtor
+}
+
+ OpenGL3:: AmbientLight(std::string name="")
+  {
+        OpenGL3::Object;
+  }
+ OpenGL3::  ~AmbientLight()
+    {
+
+    }

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="PSGamaeMaker(GLFW-IMGUI)" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/PSGamaeMaker(GLFW-IMGUI)" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-m32" />
+					<Add option="-g" />
+					<Add option="-DGLEW_STATIC" />
+					<Add option="-DIMGUI_IMPL_OPENGL_LOADER_GLEW" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add option="-m32" />
+					<Add library="PSGamePhysics/PSGamePhysics/bin/Debug/libPSGamePhysics.a" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/PSGamaeMaker(GLFW-IMGUI)" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-m32" />
+			<Add option="-fexceptions" />
+			<Add option="-DGLEW_STATIC" />
+			<Add option="-DOPENGL3" />
+			<Add directory="Dependencies/include" />
+			<Add directory="headers" />
+			<Add directory="PSGameLibrary/include" />
+			<Add directory="PSGamePhysics/PSGamePhysics/include" />
+		</Compiler>
+		<Linker>
+			<Add option="-m32" />
+			<Add option="-lopengl32" />
+			<Add option="-lglu32" />
+			<Add option="-lglew32" />
+			<Add option="-lglfw3" />
+			<Add library="PSGamePhysics/PSGamePhysics/bin/Debug/libPSGamePhysics.a" />
+			<Add library="Dependencies/lib/GLFW/libglfw3.a" />
+			<Add library="PSGameLibrary/lib/libglew32.a" />
+			<Add library="PSGameLibrary/bin/Debug/libPSGameLibrary.a" />
+			<Add library="opengl32" />
+			<Add library="glu32" />
+			<Add library="gdi32" />
+			<Add library="PSGameLibrary/lib/libPSGamePhysics.a" />
+			<Add directory="Dependencies/lib/GLFW" />
+			<Add directory="PSGameLibrary/lib" />
+			<Add directory="PSGamePhysics/PSGamePhysics/bin/Debug" />
+		</Linker>
+		<Unit filename="Resources/Phong.fs" />
+		<Unit filename="Resources/Phong.fs.save" />
+		<Unit filename="Resources/Phong.glsl" />
+		<Unit filename="Resources/Phong.vs" />
+		<Unit filename="Resources/Phong.vs.save" />
+		<Unit filename="Resources/Phong.vs.save.save-failed" />
+		<Unit filename="Resources/directory.png" />
+		<Unit filename="Resources/untitled.obj" />
+		<Unit filename="headers/EngineObjects.h" />
+		<Unit filename="headers/Export.h" />
+		<Unit filename="headers/GamePhysics.h" />
+		<Unit filename="headers/GraphicsRenderApi.h" />
+		<Unit filename="headers/Physics.h" />
+		<Unit filename="headers/fileBrowser.h" />
+		<Unit filename="headers/headers.h" />
+		<Unit filename="headers/imconfig.h" />
+		<Unit filename="headers/imgui.h" />
+		<Unit filename="headers/imgui_impl_glfw.h" />
+		<Unit filename="headers/imgui_impl_opengl3.h" />
+		<Unit filename="headers/imgui_internal.h" />
+		<Unit filename="headers/import.h" />
+		<Unit filename="headers/imstb_rectpack.h" />
+		<Unit filename="headers/imstb_textedit.h" />
+		<Unit filename="headers/imstb_truetype.h" />
+		<Unit filename="headers/json.hpp" />
+		<Unit filename="src/EngineObjects.cpp" />
+		<Unit filename="src/Export.cpp" />
+		<Unit filename="src/GamePhysics.cpp" />
+		<Unit filename="src/ItemList.cpp" />
+		<Unit filename="src/Opengl3.0RenderFunctions.cpp" />
+		<Unit filename="src/Physics.cpp" />
+		<Unit filename="src/fileBrowser.cpp" />
+		<Unit filename="src/imgui.cpp" />
+		<Unit filename="src/imgui_demo.cpp" />
+		<Unit filename="src/imgui_draw.cpp" />
+		<Unit filename="src/imgui_impl_glfw.cpp" />
+		<Unit filename="src/imgui_impl_opengl3.cpp" />
+		<Unit filename="src/imgui_widgets.cpp" />
+		<Unit filename="src/import.cpp" />
+		<Unit filename="src/main.cpp" />
+		<Extensions />
+	</Project>
+</CodeBlocks_project_file>

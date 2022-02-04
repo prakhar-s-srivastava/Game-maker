@@ -1,0 +1,20 @@
+#ifndef PHYSICS_H_INCLUDED
+#define PHYSICS_H_INCLUDED
+#include"headers.h"
+#include"PSGamePhysics.h"
+
+class GameCollider
+{
+public:
+    GameCollider();
+    ~GameCollider();
+
+
+private:
+
+
+
+};
+
+
+#endif // PHYSICS_H_INCLUDED

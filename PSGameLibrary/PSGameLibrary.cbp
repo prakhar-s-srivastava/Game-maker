@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="PSGameLibrary" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/PSGameLibrary" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="obj/Debug/" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-Wall" />
+					<Add option="-g" />
+					<Add directory="include" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/PSGameLibrary" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="obj/Release/" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-Wall" />
+					<Add option="-O2" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-std=gnu++11" />
+			<Add option="-std=c11" />
+			<Add option="-m32" />
+			<Add option="-DGLEW_STATIC" />
+			<Add directory="include" />
+		</Compiler>
+		<Linker>
+			<Add option="-m32" />
+			<Add option="-lopengl32 -lglu32 -lglew32" />
+			<Add library="lib/libglew32.a" />
+			<Add library="opengl32" />
+			<Add library="glu32" />
+		</Linker>
+		<Unit filename="include/Camera.h" />
+		<Unit filename="include/DefaulShaders.h" />
+		<Unit filename="include/Lighting.h" />
+		<Unit filename="include/Material.h" />
+		<Unit filename="include/Object.h" />
+		<Unit filename="include/ObjectImport.h" />
+		<Unit filename="include/PSGameLibrary.h" />
+		<Unit filename="include/Texture.h" />
+		<Unit filename="include/Transform.h" />
+		<Unit filename="include/common.h" />
+		<Unit filename="include/stb_image.h" />
+		<Unit filename="src/Camera.cpp" />
+		<Unit filename="src/Global.cpp" />
+		<Unit filename="src/Lighting.cpp" />
+		<Unit filename="src/Material.cpp" />
+		<Unit filename="src/Object.cpp" />
+		<Unit filename="src/ObjectImport.cpp" />
+		<Unit filename="src/Texture.cpp" />
+		<Unit filename="src/Transform.cpp" />
+		<Unit filename="src/stb_image.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Extensions />
+	</Project>
+</CodeBlocks_project_file>

@@ -1,0 +1,15 @@
+#ifndef GAMEPHYSICS_H
+#define GAMEPHYSICS_H
+#include"headers.h"
+
+class GamePhysics
+{
+    public:
+        GamePhysics();
+        virtual ~GamePhysics();
+    protected:
+
+    private:
+};
+
+#endif // GAMEPHYSICS_H

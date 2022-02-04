@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="PSGamePhysics" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/PSGamePhysics" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="obj/Debug/" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-Wall" />
+					<Add option="-m32" />
+					<Add option="-g" />
+				</Compiler>
+				<Linker>
+					<Add option="-m32" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/PSGamePhysics" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="obj/Release/" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-Wall" />
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add directory="include" />
+			<Add directory="../../PSGameLibrary/include" />
+		</Compiler>
+		<Unit filename="include/Geometries.h" />
+		<Unit filename="include/PSGamePhysics.h" />
+		<Unit filename="include/Raycast.h" />
+		<Unit filename="include/colliderTranforms.h" />
+		<Unit filename="include/colliders.h" />
+		<Unit filename="include/common.h" />
+		<Unit filename="src/Geometries.cpp" />
+		<Unit filename="src/Raycast.cpp" />
+		<Unit filename="src/colliderTranforms.cpp" />
+		<Unit filename="src/colliders.cpp" />
+		<Extensions />
+	</Project>
+</CodeBlocks_project_file>

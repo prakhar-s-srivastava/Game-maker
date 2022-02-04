@@ -1,0 +1,12 @@
+#version 330
+
+uniform vec4 ambientLight;
+vec4 total_light = vec4(1.0,1.0,1.0,1.0);
+void main()
+{
+if
+
+ gl_FragColor = total_light*vec4(0.6,0.1,0.4,1.0);
+
+}
+

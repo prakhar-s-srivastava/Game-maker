@@ -1,0 +1,11 @@
+#include "EngineObjects.h"
+
+EngineObjects::EngineObjects(std::string name)
+{
+
+}
+
+EngineObjects::~EngineObjects()
+{
+
+}

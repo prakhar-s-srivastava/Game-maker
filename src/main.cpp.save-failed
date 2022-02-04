@@ -1,0 +1,71 @@
+#include <iostream>
+#define IMGUI_IMPL_OPENGL_LOADER_GLEW
+#include "imgui.h"
+#include "imgui_impl_glfw.h"
+#include "imgui_impl_opengl3.h"
+
+#include<GL/glew.h>
+#include<GLFW/glfw3.h>
+#include<GLFW/glfw3native.h>
+
+#define WIDTH 640
+#define HEIGTH 480
+
+using namespace std;
+
+int main( int argc , char** argv)
+{
+
+// glew and glfw inilizer
+     glfwInit();
+     GLFWwindow *window = glfwCreateWindow(WIDTH, HEIGTH, "PSGAMEMAKER", NULL, NULL);
+        glfwMakeContextCurrent(window);
+        GLenum glewSatus = glewInit();
+      if(glewSatus != GLEW_OK) std::cerr<<"Glew not initialized"<<std::endl;
+
+//screen height n widht
+
+const GLFWvidmode *return_struct=glfwGetVideoMode(glfwGetPrimaryMonitor());;
+
+int height = return_struct->height;
+std::cout<<"height "<<height<<std::endl;
+
+
+//getting imgui ready
+       IMGUI_CHECKVERSION();
+        ImGui::CreateContext();
+        ImGuiIO& io = ImGui::GetIO(); (void)io;
+
+        ImGui::StyleColorsDark();
+        const char glsl_version[15] = "#version 130";
+        ImGui_ImplGlfw_InitForOpenGL(window, true);
+        ImGui_ImplOpenGL3_Init(glsl_version);
+
+
+        ImVec4 clear_color = ImVec4(0.45f, 0.55f, 0.60f, 1.00f);
+        glClearColor(clear_color.x, clear_color.y, clear_color.z, clear_color.w);
+        glViewport(0, 0, WIDTH, HEIGTH);
+        while (!glfwWindowShouldClose(window))
+    {
+
+        glClear(GL_COLOR_BUFFER_BIT);
+
+        //Code
+        ImGui_ImplOpenGL3_NewFrame();
+        ImGui_ImplGlfw_NewFrame();
+        ImGui::NewFrame();
+
+         ImGui::Begin("Hello, world!");                          // Create a window called "Hello, world!" and append into it.
+         ImGui::Text("This is some useful text.");
+         ImGui::End();
+
+        ImGui::Render();
+        ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData());
+        glfwSwapBuffers(window);
+        glfwPollEvents();
+    }
+
+    glfwTerminate();
+    return 0;
+
+}

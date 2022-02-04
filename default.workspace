@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_workspace_file>
+	<Workspace title="Workspace">
+		<Project filename="PSGamePhysics/TESTPHYSICS/TESTPHYSICS.cbp" />
+		<Project filename="PSGamePhysics/PSGamePhysics/PSGamePhysics.cbp" />
+		<Project filename="PSGamaeMaker(GLFW-IMGUI).cbp" />
+		<Project filename="PSGameLibrary/PSGameLibrary.cbp" />
+	</Workspace>
+</CodeBlocks_workspace_file>
